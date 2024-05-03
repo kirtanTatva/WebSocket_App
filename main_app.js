@@ -30,6 +30,9 @@ app.post("/data", (req, res) => {
       client.send(receivedData);
     }
   });
+  
+  // var client = wss.clients.values().next().value;
+  // client.send(receivedData);
 
   res.status(200).json({ message: "Data received successfully" });
 });
